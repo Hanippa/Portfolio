@@ -1,0 +1,36 @@
+.project-container{
+    width: 80%;
+    margin: 1em;
+    background-color: rgb(255, 255, 255);
+    height: 25em;
+    border-radius: 3em;
+    padding: 2px;
+    display: flex;
+    box-shadow: 6px 6px 10px -4px rgba(107,107,107,0.75);
+-webkit-box-shadow: 6px 6px 10px -4px rgba(107,107,107,0.75);
+-moz-box-shadow: 6px 6px 10px -4px rgba(107,107,107,0.75);
+transition: 1s all;
+overflow: hidden;
+}
+.project-container:hover{
+    transform: scale(102%);
+}
+
+.project-container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.project-container-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.project-container-image{
+    transform: scale(18%);
+}

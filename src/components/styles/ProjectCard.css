@@ -1,4 +1,5 @@
 .project-container{
+    border: 1px solid rgba(128, 128, 128, 0.11);
     width: 80%;
     margin: 1em;
     background-color: rgb(255, 255, 255);
@@ -6,13 +7,16 @@
     border-radius: 3em;
     padding: 2px;
     display: flex;
-    box-shadow: 6px 6px 10px -4px rgba(107,107,107,0.75);
--webkit-box-shadow: 6px 6px 10px -4px rgba(107,107,107,0.75);
--moz-box-shadow: 6px 6px 10px -4px rgba(107,107,107,0.75);
+    box-shadow: 14px 14px 0px 1px rgba(255,212,220,1);
+    -webkit-box-shadow: 14px 14px 0px 1px rgba(255,212,220,1);
+    -moz-box-shadow: 14px 14px 0px 1px rgba(255,212,220,1);
 transition: 1s all;
 overflow: hidden;
 }
 .project-container:hover{
+    box-shadow: 5px 4px 0px 1px rgba(255,212,220,1);
+-webkit-box-shadow: 5px 4px 0px 1px rgba(255,212,220,1);
+-moz-box-shadow: 5px 4px 0px 1px rgba(255,212,220,1);
     transform: scale(102%);
 }
 
@@ -23,6 +27,8 @@ overflow: hidden;
     align-items: center;
     width: 50%;
     height: 100%;
+    padding-left: 5em;
+    padding-right: 10em;
 }
 .project-container-right{
     display: flex;
@@ -33,4 +39,16 @@ overflow: hidden;
 }
 .project-container-image{
     transform: scale(18%);
+}
+.project-name{
+font-size: 3em;
+margin-bottom: 1em;
+}
+.project-description{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.project-logo{
+    width: 1em;
+    height: 1em;
 }

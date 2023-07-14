@@ -1,10 +1,10 @@
 import './styles/ProjectCard.css';
-const ProjectCard = ({name , description , image}) => {
+const ProjectCard = ({name , description , image , logo , onPress}) => {
     return (
-        <div className='project-container'>
+        <div className='project-container' onClick={onPress}>
             <div className='project-container-left' >
             <div className='project-container-text'>
-            <h1 className="project-name">{name}</h1>
+            <h1 className="project-name">{name} <img className='project-logo' src={logo} alt='project logo'/> </h1>
             <p className="project-description">{description}</p>
             </div>
             </div>

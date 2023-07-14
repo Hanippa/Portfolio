@@ -1,15 +1,17 @@
-
+import React from 'react';
 import './styles/style.css';
-import Home from './screens/Home';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
 
+
+
+import AnimatedRoutes from './components/AnimatedRoutes'
+import { BrowserRouter } from 'react-router-dom';
 function App() {
+
   return (
     <div className="App">
-      <Nav/>
-     <Home/>
-     <Footer/>
+     <BrowserRouter >
+      <AnimatedRoutes/>
+    </BrowserRouter>
     </div>
   );
 }

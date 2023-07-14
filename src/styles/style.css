@@ -1,9 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
 *{
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.flower{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('../images/flower.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: -0.1em;
 }
 .main-section-container{
     width: 100%;
@@ -13,14 +22,68 @@
     align-items: center;
 }
 .projects-section-container{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5em;
+    padding-top: 2em;
+    border-top: 2px rgba(255, 192, 203, 0.200) solid;
 }
 .main-title{
     font-size: 4em;
-    font-weight: 200;
+    font-weight: 300;
 }
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: blur(20em);
+    z-index: -1;
+}
+.background-circle {
+    position: absolute;
+    border-radius: 100%;
+    background-color: pink;
+}
+.background-circle-1{
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
+}
+.background-circle-2{
+    bottom: 10em;
+    right: 10em;
+    width: 15em;
+    height: 15em;
+}
+.divider-flower{
+    position: absolute;
+    top: -1em;
+}
+.divider-flower-project{
+    position: absolute;
+    top: -0.5em;
+
+}
+.project-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }

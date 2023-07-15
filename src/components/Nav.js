@@ -17,7 +17,7 @@ const Nav = () => {
     </div>
     <div className='nav-item nav-item-3 ' >
     <div className='nav-item-background'></div>
-    <Link to="/resume"><h1 className='nav-item-text'>resume /</h1></Link>
+    <a href='../resume.pdf'><h1 className='nav-item-text'>resume /</h1></a>
     </div>
     </div>
 </div>)

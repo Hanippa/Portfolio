@@ -1,5 +1,5 @@
 import './styles/ProjectCard.css';
-const ProjectCard = ({name , description , image , logo , onPress}) => {
+const ProjectCard = ({name , description , image , logo , onPress , starOpacity , starScale}) => {
     return (
         <div className='project-container' onClick={onPress}>
             <div className='project-container-left' >

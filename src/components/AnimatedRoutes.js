@@ -3,10 +3,9 @@ import About from '../screens/About'
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { AnimatePresence } from 'framer-motion';
-import Resume from '../screens/Resume';
 
 
-import { Route, Routes , useLocation, redirect } from 'react-router-dom';
+import { Route, Routes , useLocation } from 'react-router-dom';
 
 const AnimatedRoutes = () => {
     const location = useLocation()
@@ -22,7 +21,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <redirect from="/resume" to="../resume.pdf" />
+        
       </Routes>
       </AnimatePresence>
       <Footer/>

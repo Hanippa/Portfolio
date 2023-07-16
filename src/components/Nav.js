@@ -1,25 +1,40 @@
 import './styles/Nav.css';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+
 const Nav = () => {
-    return (
-<div className='nav-container'>
-    <div className='nav-logo'>
-    <h1>dekel matslich <i className='flower'/></h1>
+  const location = useLocation();
+
+  const isActiveRoute = (route) => {
+    return location.pathname === route;
+  };
+
+  return (
+    <div className='nav-container'>
+      <div className='nav-logo'>
+        <NavLink to='/' className='nav-item'><h1>dekel matslich <i className='flower'/></h1></NavLink>
+      </div>
+      <div className='nav-items'>
+        <NavLink
+          className={`nav-item nav-item-1 ${isActiveRoute('/') ? 'nav-selected' : ''}`}
+          to="/"
+        >
+          <div className='nav-item-background'></div>
+          <h1 className='nav-item-text'>home /</h1>
+        </NavLink>
+        <NavLink
+          className={`nav-item nav-item-2 ${isActiveRoute('/about') ? 'nav-selected' : ''}`}
+          to="/about"
+        >
+          <div className='nav-item-background'></div>
+          <h1 className='nav-item-text'>about /</h1>
+        </NavLink>
+        <div className='nav-item nav-item-3'>
+          <div className='nav-item-background'></div>
+          <a className='nav-item' href='../resume.pdf'><h1 className='nav-item-text'>resume</h1></a>
+        </div>
+      </div>
     </div>
-    <div className='nav-items'>
-    <div className='nav-item nav-item-1 nav-selected' >
-        <div className='nav-item-background'></div>
-        <Link  to="/"><h1 className='nav-item-text'>home /</h1></Link>
-    </div>
-    <div className='nav-item nav-item-2' >
-    <div className='nav-item-background'></div>
-    <Link to="/about"><h1 className='nav-item-text'>about /</h1></Link>
-    </div>
-    <div className='nav-item nav-item-3 ' >
-    <div className='nav-item-background'></div>
-    <a href='../resume.pdf'><h1 className='nav-item-text'>resume /</h1></a>
-    </div>
-    </div>
-</div>)
+  );
 }
-export default Nav
+
+export default Nav;

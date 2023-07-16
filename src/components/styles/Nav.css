@@ -35,7 +35,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: black;
 }
+
 .nav-selected .nav-item-background{
     filter: blur(1em);
     position: absolute;
@@ -44,3 +47,4 @@
     height:2em;
     z-index: -1;
 }
+

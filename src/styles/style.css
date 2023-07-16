@@ -246,7 +246,11 @@
     box-shadow: 4px 4px 0px 1px rgba(255,212,220,1);
     -webkit-box-shadow: 4px 4px 0px 1px rgba(255,212,220,1);
     -moz-box-shadow:4px 4px 0px 1px rgba(255,212,220,1);
+    transition: all 1s;
 
+  }
+  .chip:hover{
+    transform: scale(105%);
   }
   .chip-container{
     width: 80%;
@@ -261,17 +265,37 @@
 .modal-back{
   display: flex;
   justify-content: flex-start;
-  gap: 1em;
+  gap: 0.5em;
   align-items: center;
+  margin-bottom: 2em;
 }
 .modal-thumbnail{
   position: absolute;
   width: 100%;
-  bottom: -5em;
+  bottom: -8em;
 }
-.google-play{
+.badge{
   width: 10em;
   position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+.modal-title{
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+.modal-logo{
+  width: 1em;
+  height: 1em;
+}
+.modal-description{
+  margin-bottom: 2em;
+}
+.modal-description p{
+  line-height: 1.4em;
 }
 
   @keyframes stars-animation {

@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import back_arrow from '../images/arrow-back.svg'
-import nourish_modal_thumbnail from '../images/projects/thumbnails/modal/nourish.svg'
-import google_play from '../images/google-play-badge.png'
 const ProjectModal = ({ project, onClose }) => {
     return (
       <motion.div
@@ -13,13 +11,26 @@ const ProjectModal = ({ project, onClose }) => {
         exit={{ opacity: 0, y: -100 }}
       > 
         <div  onClick={onClose} className="modal-back">
-        <img alt="back arrow" style={{width:'2em' , height:'2em'}} src={back_arrow}/>
-        <h1  >back</h1>
+        <img alt="back arrow" style={{width:'1em' , height:'1em'}} src={back_arrow}/>
+        <h3>back</h3>
         </div>
+        <div className='modal-title'>
         <h3>{project.title}</h3>
+        <img alt="modal logo" src={project.logo} className="modal-logo"/>
+        </div>
+   
+        <div className="modal-description">
         <p>{project.full_description}</p>
-        <a rel="noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=com.hanippa.nourish"><img className="google-play" src={google_play} alt="get on google play"/></a>
-        <img alt="project modal thumbnail" className="modal-thumbnail" src={nourish_modal_thumbnail}/>
+        </div>
+    
+        <div className="chip-container">
+          {project.tech.map((tech => {
+            return (<span className="chip">{tech}</span>)
+          }))}
+                
+                </div>
+        <a rel="noreferrer" target="_blank" href={project.url}><img className="badge" src={project.badge} alt="get project"/></a>
+        <img alt="project modal thumbnail" className="modal-thumbnail" src={project.modal_thumbnail}/>
         
       </motion.div>
     );

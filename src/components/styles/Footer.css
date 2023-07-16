@@ -27,3 +27,21 @@
 .footer-item-text{
     font-size: 1em;
 }
+.footer-link{
+    text-decoration: none;
+    color: black;
+}
+.footer-item-text {
+    font-size: 1em; /* default font size */
+  }
+  
+  .footer-item:hover .footer-item-text {
+    font-size: 1em; /* increased font size on hover */
+  }
+  .tooltip{
+    position: absolute;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 7em;
+  }

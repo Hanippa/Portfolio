@@ -2,11 +2,13 @@
 import { motion } from "framer-motion";
 import about_illustration from '../images/about-illustration.svg'
 const About = () => {
+    
     return (
-        <motion.div       initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}>
+        <motion.div
+        key={'about-animated'}
+        exit={{ opacity:0 }}
+        initial={{ opacity:0 }}
+        animate={{ opacity:1 }}>
         <div className="about-main-section-container">
             <div className="about-section about-section-2">
                 <div className="about-section-2-left">

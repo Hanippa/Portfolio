@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <div className='nav-container'>
       <div className='nav-logo'>
-        <NavLink to='/' className='nav-item'><h1>dekel matslich <i className='flower'/></h1></NavLink>
+        <NavLink to='/' className='nav-item'><h1 className='nav-logo-text'>dekel matslich <i className='flower'/></h1></NavLink>
       </div>
       <div className='nav-items'>
         <NavLink

@@ -23,8 +23,8 @@
     align-items: center;
     
 }
-.navitem-text{
-    font-weight: 200;
+.nav-item-text{
+    
 }
 .nav-logo{
     margin-left: 1em;
@@ -48,3 +48,12 @@
     z-index: -1;
 }
 
+@media screen and (max-width: 900px) {
+    .nav-item-text {
+      font-size: 1.5em;
+    }
+    .nav-logo-text{
+        display: none;
+    }
+    
+  }

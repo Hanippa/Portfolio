@@ -9,7 +9,7 @@
 }
 .sub-footer-container{
     padding-top: 1em;
-    border-top: 2px rgba(255, 192, 203, 0.200) solid;
+    border-top: 2px var(--seperator-color) solid;
     width: 90%;
     height: 100%;
     display: flex;
@@ -40,7 +40,7 @@
   }
   .tooltip{
     position: absolute;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 1em;
     padding: 1em;
     margin-bottom: 7em;

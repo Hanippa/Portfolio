@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import about_illustration from '../images/about-illustration.svg'
+
 const About = () => {
     
     return (
@@ -26,7 +26,7 @@ I have a love for art. When I'm not immersed in lines of code, I indulge in vari
 I'm excited to learn about your project and how we can collaborate to bring your digital vision to life. Let's combine our passions and skills to create extraordinary experiences that leave a lasting impact! 🌟🚀</h4>
                 </div>
                 <div className="about-section-2-right">
-                    <img src={about_illustration} alt="about illustration"/>
+                    <div className="about-illustration"/>
                 </div>
             </div>
             <div className="about-section about-section-3">

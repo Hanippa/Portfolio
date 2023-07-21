@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import back_arrow from '../images/arrow-back.svg'
 const ProjectModal = ({ project, onClose }) => {
+
+  function handleImageLoad() {
+    const image = document.getElementsByClassName('modal-thumbnail')[0];
+    setTimeout(() => {
+      image.classList.remove('image-slide-in');
+    }, 50);
+  }
     return (
       <motion.div
       
@@ -11,7 +18,7 @@ const ProjectModal = ({ project, onClose }) => {
         exit={{ opacity: 0, y: -100 }}
       > 
         <div  onClick={onClose} className="modal-back">
-        <img alt="back arrow" style={{width:'1em' , height:'1em'}} src={back_arrow}/>
+        <img alt="back arrow" style={{width:'1em' , height:'1em'}} className="back_arrow" src={back_arrow}/>
         <h3>back</h3>
         </div>
         <div className='modal-title'>
@@ -30,7 +37,7 @@ const ProjectModal = ({ project, onClose }) => {
                 
                 </div>
         <a rel="noreferrer" target="_blank" href={project.url}><img className="badge" src={project.badge} alt="get project"/></a>
-        <img alt="project modal thumbnail" className="modal-thumbnail" src={project.modal_thumbnail}/>
+        <img onLoad={handleImageLoad} alt="project modal thumbnail" className="modal-thumbnail image-slide-in" src={project.modal_thumbnail}/>
         
       </motion.div>
     );

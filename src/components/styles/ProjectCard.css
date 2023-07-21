@@ -3,21 +3,21 @@
     border: 1px solid rgba(128, 128, 128, 0.11);
     width: 80%;
     margin: 1em;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
     height: 25em;
     border-radius: 3em;
     padding: 2px;
     display: flex;
-    box-shadow: 14px 14px 0px 1px rgba(255,212,220,1);
-    -webkit-box-shadow: 14px 14px 0px 1px rgba(255,212,220,1);
-    -moz-box-shadow: 14px 14px 0px 1px rgba(255,212,220,1);
+    box-shadow: 14px 14px 0px 1px var(--shadow-color);
+    -webkit-box-shadow: 14px 14px 0px 1px var(--shadow-color);
+    -moz-box-shadow: 14px 14px 0px 1px var(--shadow-color);
 transition: 1s all;
 overflow: hidden;
 }
 .project-container:hover{
-    box-shadow: 5px 4px 0px 1px rgba(255,212,220,1);
--webkit-box-shadow: 5px 4px 0px 1px rgba(255,212,220,1);
--moz-box-shadow: 5px 4px 0px 1px rgba(255,212,220,1);
+    box-shadow: 5px 4px 0px 1px var(--shadow-color);
+-webkit-box-shadow: 5px 4px 0px 1px var(--shadow-color);
+-moz-box-shadow: 5px 4px 0px 1px var(--shadow-color);
     transform: scale(102%);
 }
 

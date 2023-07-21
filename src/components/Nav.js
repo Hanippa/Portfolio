@@ -1,5 +1,6 @@
 import './styles/Nav.css';
 import { NavLink, useLocation } from 'react-router-dom';
+import DarkModeToggle from './DarkModeToggle';
 
 const Nav = () => {
   const location = useLocation();
@@ -14,6 +15,7 @@ const Nav = () => {
         <NavLink to='/' className='nav-item'><h1 className='nav-logo-text'>dekel matslich <i className='flower'/></h1></NavLink>
       </div>
       <div className='nav-items'>
+      <DarkModeToggle/>
         <NavLink
           className={`nav-item nav-item-1 ${isActiveRoute('/') ? 'nav-selected' : ''}`}
           to="/"
@@ -32,6 +34,7 @@ const Nav = () => {
           <div className='nav-item-background'></div>
           <a className='nav-item' href='../resume.pdf'><h1 className='nav-item-text'>resume</h1></a>
         </div>
+
       </div>
     </div>
   );

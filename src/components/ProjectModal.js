@@ -17,6 +17,7 @@ const ProjectModal = ({ project, onClose }) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -100 }}
       > 
+      <div className="project-modal-main-container">
         <div  onClick={onClose} className="modal-back">
         <img alt="back arrow" style={{width:'1em' , height:'1em'}} className="back_arrow" src={back_arrow}/>
         <h3>back</h3>
@@ -37,7 +38,10 @@ const ProjectModal = ({ project, onClose }) => {
                 
                 </div>
         <a rel="noreferrer" target="_blank" href={project.url}><img className="badge" src={project.badge} alt="get project"/></a>
+        </div>
+        <div className="modal-thumbnail-container">
         <img onLoad={handleImageLoad} alt="project modal thumbnail" className="modal-thumbnail image-slide-in" src={project.modal_thumbnail}/>
+        </div>
         
       </motion.div>
     );

@@ -45,3 +45,9 @@
     padding: 1em;
     margin-bottom: 7em;
   }
+  @media screen and (max-width: 900px) {
+    .footer-item-text{
+        font-size: 0.6em;
+    }
+    
+  }

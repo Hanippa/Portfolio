@@ -200,7 +200,6 @@ cursor: pointer;
   .about-main-section-container{
     width: 100%;
     padding-top: 3em;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,12 +383,53 @@ cursor: pointer;
   height: 20em;
   background-size: contain;
   background-repeat: no-repeat;
+  padding: 4em;
+background-position: center;  
 }
 .about-section-2-left h4{
   font-size: 0.9vw;
 }
+.project-modal-main-container{
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--background-color);
+  opacity: 98%;
+  padding-bottom: 2em;
+}
 
 @media screen and (max-width: 900px) {
+  .background-circle{
+    display: none;
+  }
+  .star{
+    display: none;
+  }
+  .background-circle-1 {
+    width: 20em;
+    height: 20em;
+  }
+  .modal-thumbnail{
+    position:initial;
+  }
+  .modal-title{
+    font-size: 1.3em;
+  }
+  .modal-back h3{
+    font-size: 0.8em;
+  }
+  .modal-description{
+    font-size: 0.7em;
+  }
+  .chip{
+    font-size: 0.6em;
+  }
+  .project-modal{
+    padding: 10px;
+  }
+  .badge{
+    width: 5em;
+  }
   .main-title{
     font-size: 2em;
   }
@@ -413,6 +453,7 @@ cursor: pointer;
   }
   .about-section-3{
     padding: 0em;
+    padding-top: 2em;
     height:30%;
   }
   .chip-container{
@@ -420,16 +461,19 @@ cursor: pointer;
     overflow-x: hidden;
   }
   .about-section-3 h1{
-    font-size: 1em;
+    font-size: 0.5em;
   }
   .about-section-2-left h4{
-    font-size: 1em;
+    font-size: 0.7em;
+  }
+  .about-section-2-left h1{
+    font-size: 1.3em;
   }
 
 }
 @media screen and (max-width: 350px) {
   .main-title{
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 
   
